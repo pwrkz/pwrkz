@@ -1,0 +1,39 @@
+﻿/* CSS Document */
+
+.gallery {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+#zoom {
+ list-style:none;
+}
+#zoom li {
+ width:174px; /* Ширина размера изображения с учетом рамки в 1px */
+ height:123px;
+ float:left;
+ margin-left:10px;
+ margin-top:10px;
+ overflow:visible;
+ display: block;
+}
+.zoom_it {
+ position:relative;
+ top:0;
+ left:0;
+ border:1px solid #ccc;
+}
+
+.zoom_it:hover {
+ top:-10px; /* Сдвигаем изображение вверх на значение (новая ширина - старая)/2 */
+ left:-10px; /* Сдвигаем изображение влево на значение (новая высота - старая)/2 */
+ z-index:9999; /* Располагаем изображение над всеми элементами */
+ box-shadow: 0 20px 30px rgba(0,0,0,0.5); /* Добавляем тень */
+ -webkit-box-shadow: 0 20px 30px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+ -moz-box-shadow: 0 20px 30px rgba(0,0,0,0.5); /* Для Firefox */
+ transition: all 0.3s ease; /* Изменяем значения всех свойств плавно в течение 0,3 сек */
+ -webkit-transition: all 0.3s ease; /* Для Safari и Chrome */
+ -o-transition: all 0.3s ease; /* Для Opera */
+ -moz-transition: all 0.3s ease; /* Для Firefox */
+}

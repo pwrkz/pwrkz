@@ -1,0 +1,230 @@
+﻿/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	position:relative;
+    min-height: 100%;
+	color:#000;
+}
+body {
+	font: 14px "Trebuchet MS",helvetica,sans-serif;
+	width: 100%;
+    height: 100%;
+}
+li{list-style:none}
+
+h1{font:normal bold 130% Georgia,serif;color:#c33;text-transform:uppercase;}
+h2{font:italic normal 130% Georgia,serif;color:#c33;text-transform:uppercase;}
+h3{font:normal bold 120% Georgia,serif;color:#c33;text-transform:uppercase;}
+h4{font:italic normal 120% Georgia,serif;color:#c33;text-transform:uppercase;}
+h5{font:normal bold 110% Georgia,serif;color:#c33;text-transform:none;}
+h6{font:italic normal 110% Georgia,serif;color:#c33;text-transform:none;}
+
+a:hover {color:#9c9} /* курсор мыши над ссылкой */
+p {
+	margin-bottom:10px;
+}
+img {
+	border: none;
+    max-width: 100%;
+}
+.wrapper{
+    position:relative;
+    width:776px;
+    margin:0 auto;
+}
+
+/* Меню сайта
+-----------------------------------------------------------------------------*/
+.top-line{
+	background: #c33;
+	height: 3px;}
+.menu-top {
+	height:40px;
+    background:#006;
+	color:#fff;
+	border-bottom: 1px solid #c33;}
+.menu-top li {
+	text-transform:uppercase;
+	padding:0 90px 0 10px;
+	display:inline;
+	float:left;
+	font:bold 110%/40px "Trebuchet MS",helvetica,sans-serif;}
+.menu-top li a {
+	text-decoration:none;
+	color:#fff;}
+.menu-top li a:hover { 
+	color:#c33;}
+.feedback {
+	color:fff;
+	font-size:smaller;
+	line-height:20px;
+	/*position:absolute;
+	right:0;
+	top:5px;*/
+}	
+	
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	position:relative;
+	height:220px;
+	background:url(images/bg.png); /* Фоновый цвет и фоновый рисунок*/
+	background-size:150px;
+	border-bottom: 1px dotted #000;}
+
+
+.logotype {
+    width:220px;
+	text-align:center;}
+.logotype  img {
+	margin-top:10px;
+	border:0;}
+.logoname {
+	position:absolute;
+	top:5px;
+	left:220px;
+	font:bolder 33px/45px Arialblack,/*"Trebuchet MS",*/helvetica,sans-serif;
+	color:#006;
+	letter-spacing:1px;}
+.logotext {
+	position:absolute;
+	top:100px;
+	left:220px;	 
+	color:#006;
+	font:italic x-small "Trebuchet MS",helvetica,sans-serif;}
+
+
+/* Cmain
+-----------------------------------------------------------------------------*/
+#cmain {
+	position:relative;
+	width:100%;
+	margin:0 auto;
+	padding-bottom:250px; /*Примерно 2 размера footer, чтобы он не наезжал на контент при узком окне браузера*/
+}
+
+.container{
+	margin:30px 10px 10px 10px;
+}
+
+/*news page*/
+.news {
+	float:left;
+	width:100%;
+}
+.news-date {
+	width: 120px;
+	float: left;
+	font:italic x-small Georgia,serif;color:#c33;text-transform:none;
+}
+.news-title {
+	float: left;
+	font:italic  Georgia,serif;color:#c33;text-transform:none;
+}
+.news-entry  {
+}
+
+/*docs page*/
+.docs {
+	float:left;
+	width:100%;
+}
+.docs ul{
+}
+.docs li{
+	padding:0 0 10px 25px;
+}
+
+/*contacts page*/
+.contacts {
+	float:left;
+	width:100%;
+}
+.vcard{
+	width:100%;
+	margin:1px;
+	float:left; 
+    text-align:left;
+	/*border:1px solid #ccc;
+	border-radius:12px;*/
+	padding:7px;
+}
+.vcard-l{
+	float:left;
+}
+.vcard-r{
+	padding:0 0 0 5px;
+	float:left;
+}
+.photo img{
+    height:70px;
+}
+.name{
+	font-weight:bold;
+	letter-spacing:1px;
+}
+.prof{
+	font-style:italic;
+	font-size:85%;
+}
+.tel{
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	position:absolute;
+	bottom:0;
+	margin:0 auto;
+	width:100%;
+	height:175px;
+	font-size:smaller;}
+.bottom-link {
+	border-bottom: 1px solid #006;}
+.bottom-link-line {
+	width:20%;
+	height:35px;
+	float:left;
+    text-align:center;}
+.bottom-link-line img {
+	border:none;
+    height:33px;}
+
+.bottom-info {
+	height:120px;
+	padding:10px;
+	background:url(images/bg.png); /*Фоновый цвет и фоновый рисунок*/
+	background-size:150px;}
+.footer-text1 {
+	height:120px;
+	font-style:italic;
+	width:40%;
+	float:left;
+	border-right:1px dotted #000;
+	text-align:left;}
+.footer-menu {
+	height:120px;
+	width:19%;
+	float:left;
+	text-align:center;}
+.footer-menu li {
+		text-transform:uppercase;
+		line-height:37px;}
+.footer-menu li a {
+		text-decoration:none;
+		color:#006;}
+.footer-menu li a:hover { 
+		color:#c33;}
+		
+.footer-text3  {
+	height:120px;
+	width:40%;
+	float:left;
+	text-align:right;
+	border-left:1px dotted #000;}
